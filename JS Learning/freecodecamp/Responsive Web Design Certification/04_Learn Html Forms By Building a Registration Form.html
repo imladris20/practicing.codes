@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Regisration Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="04.styles.css">
+    </head>
+
+    <body>
+
+        <h1>Registration Form></h1>
+        <p>Please fill out this form with the required information</p>
+
+        <form action="https://register-demo.freecodecamp.org" method="post">
+
+            <fieldset>
+                <label for="first-name">Enter Your First Name: <input name="first-name" id="first-name" type="text" required/></label>
+                <label for="last-name">Enter Your Last Name: <input name="last-name" id="last-name" type="text" required/></label>
+                <label for="email">Enter Your Email: <input name="email" id="email" type="email" required/></label>
+                <!--將label元素的for屬性以及input元素的id屬性賦予相同名字，兩者就會相互連結-->
+                <label for="new-password">Create a New Password: <input name="new-password" id="new-password" type="password"  pattern="[a-z0-5]{8,}" required/></label>
+                <!-- 在input裡面的pattern屬性也可以改用minlength="8"屬性替換以對ps內容發揮限制-->
+            </fieldset>
+
+            <fieldset>
+                <label for="personal-account"><input type="radio" name="account-type" id="personal-account" class="inline"/> Personal Account </label>
+                <label for="business-account"><input type="radio" name="account-type" id="business-account" class="inline" /> Business Account </label>
+                <!--在input elemnet 裡面如果使用一樣的name屬性，就會只能擇一，兩者會相關-->
+                <label for="terms-and-conditions"><input type="checkbox" required id="terms-and-conditions" name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a></label>   
+                <!--checkbox配required可用在想要強制勾選已閱讀XX條款之情形-->
+            </fieldset>
+
+            <fieldset>
+                <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture" name="profile-picture"/></label>
+                <label for="age">Input your age (years): <input type="number" min="13" max="120" id="age" name="age"/></label>
+                <label for="referrer">How did you hear about us?
+                    <select id="referrer" name="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube Channel</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label for="bio">Provide a bio: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
+            </fieldset>
+
+
+            <input type="submit" value="Submit">    <!--提交距離最近的form元素資料出去-->
+
+        </form>
+    
+    </body>
+</html>

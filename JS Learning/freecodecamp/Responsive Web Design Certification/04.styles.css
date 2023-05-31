@@ -1,0 +1,96 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: #f5f6f7; /* this line is about color of text */
+    background-color: #1b1b32;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;   /*左右為0.5根元素；上下為0 */
+}
+
+h1,p {
+    text-align: center;
+    margin: 1em auto;   /*左右為1根元素、上下為自動調整*/
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    /*表示元素的最大寬度為 500 像素。無論視窗有多寬，元素的寬度都不會超過這個值。*/
+    min-width: 300px;
+    /*表示元素的最小寬度為 300 像素。即使視窗非常窄，元素的寬度也不會小於這個值。*/
+    /*px是 "pixels" 的縮寫，表示像素。它是一個絕對單位，1 個像素等於顯示器上的一個點。*/
+    width: 60vw;    
+    /*vw 是 "viewport width" 的縮寫，表示相對於視窗寬度的百分比。它是一個相對單位，1vw 等於視窗寬度的 1%。*/
+    padding-bottom: 2em;
+}
+
+fieldset {
+    /* 
+    border: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0; 
+    上面這樣寫也可以，但冗言贅字很多
+    */
+    border: none;
+    padding: 2rem 0;    
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+input, textarea, select {
+    width: 100%;
+    /* 
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0; 
+    上面這樣寫也可以，但冗言贅字很多
+    */
+    margin: 10px 0 0 0;
+    /* margin: 上 右 下 左*/
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+/* 對定為inline類別的元素重設width，亦即蓋過上方設定width為100% */
+
+input, textarea {
+    background-color: #0a0a23;
+    border: solid 1px #0a0a23;
+    /* border裡面的屬性設定沒有一定順序要求，也請務必知道他是各自代表border-width、border-style、border-color，是可以分三行寫的 */
+    color: #ffffff;
+    /* 使用者輸入文字的顏色 */
+}
+
+input[type="submit"] {
+    display: block;
+    width:60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+a {
+    color: #dfdfe2;
+}

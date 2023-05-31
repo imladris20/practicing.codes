@@ -1,0 +1,169 @@
+body {
+   background-image: linear-gradient(180deg, rgba(255, 200, 155, 1),rgba(255, 200, 155, 0.2)),url(https://i.imgur.com/61gpnfR.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   font-family:"comic sans ms","Microsoft JhengHei";
+}
+
+header {
+   align-items: center;
+   margin: 2vw 20vw 3vw 20vw;
+}
+
+#title {
+   color: rgba(255,95,162);
+   text-align: center;
+   font-size:40px;
+   align-items: center;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#description{
+   color: rgba(255,95,162,1);
+   text-align: center;
+   font-size: 18px;
+   font-style: italic;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#title, #description {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+   background-color:rgba(255,95,162,0.8);
+   text-align: center;
+   margin: 0 20vw 0 20vw;
+   /* font-family:"comic sans ms"; */
+}
+
+.banner {
+   width: 100%;
+   /*還要再思考為什麼圖片的左右邊界沒辦法充滿*/
+}
+
+.questions {
+   text-align: left;
+   margin: auto 2.5vw;
+   border: none;
+}
+
+figcaption {
+   color: rgb(252,200,155);
+   font-size: 30px;
+   font-family: georgia;
+   text-align: center;
+   margin: 10px;
+}
+
+input, option, select, button {
+   font-family: inherit;
+}
+
+label, #gender, #fan-type-description, #source, #fanage {
+   color: white;
+   display: block;
+   width: 100%;
+   margin-top:10px;
+   margin-bottom: 10px;
+   /* font-family:"comic sans ms"; */
+   font-size: 1.2rem;
+}
+
+label[for="number"] {
+   display: inline;
+   margin-right: 120px;
+}
+
+label[for="fan-age-month"]{
+   display: inline;
+}
+
+.gender-type {
+   display: inline;
+   margin-right: 100px;
+}
+
+.source-type {
+   display: inline;
+   margin-right: 12px;
+}
+
+.fan-type {
+   font-size: 16px;
+}
+
+#number, #fan-age-month {
+   display: inline;
+   width: 29%;
+   font-size: 1.2rem;
+   text-align: right;
+   border: 1px solid rgb(255,95,162);
+   border-radius: 0.25rem;
+}
+
+select, option, #albums, #name, #last-name, #birthday, #songs, #varify, #email {
+   display: block;
+   font-size: 1.2rem;
+   /* font-family:"comic sans ms","Microsoft JhengHei"; */
+   color: black;
+   margin-top:10px;
+   margin-bottom: 10px;
+   width: 100%;
+   border: 1px solid rgb(255,95,162);
+   border-radius: 0.25rem;
+}
+
+select:focus, option:focus, #albums:focus, #name:focus, #last-name:focus, #birthday:focus, #songs:focus, #varify:focus,
+#number:focus,
+#fan-age-month:focus,
+#message:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 200, 155, 0.7);
+}
+
+#message {
+   margin-top:10px;
+   display: block;
+   height: 120px;
+   width: 100%;
+   /* font-family:"comic sans ms"; */
+   border: 1px solid rgb(255,95,162);
+   border-radius: 0.25rem;
+}
+
+button {
+   width: 88.4%;
+   margin-top: 30px;
+   font-size: 18px;
+   line-height: 2.5rem;
+   background-color: rgba(0,155,230,0.8);
+   color: white;
+   border: none;
+
+}
+
+a{
+   color: white;
+}
+
+#birthday-description, #varify-description, #copyright {
+   font-size: 10px;
+   color: white;
+}
+
+footer {
+   padding-bottom: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+   transform: scale(1.2);
+   margin-right: 10px;
+ }
+
+.customize_checkbox {
+   margin:unset;
+}

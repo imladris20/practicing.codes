@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+    <head>
+        <title>ONCE for <a href="https://twice.jype.com/" target="_blank">TWICE</a> Survey Form</title>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="Project01_Build a Survey Form_styles.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <h1 id="title">ONCE Forever Registration Form</h1>
+            <p id="description">Thank you for filling these informations out and making us more united!</p>           
+        </header>
+
+        <div class="container">
+
+            <figure>
+                <img src="https://imgur.com/WEgR001.jpg" alt="TWICE the Goddess" class="banner">
+                <figcaption>The REAL IDOL: TWICE</figcaption>
+            </figure> 
+
+            <form action="https://twice.jype.com/" method="post" id="survey-form">
+
+                <fieldset class="questions">
+                    <label id="name-label" for="name">First Name
+                        <input id="name" type="text" name="name" placeholder="Please insert your first name" required>
+                    </label>
+                </fieldset>
+                
+                <fieldset class="questions">
+                    <label for="last-name">Last Name
+                        <input id="last-name" type="text" name="last-name" placeholder="Please insert your last name" required>
+                    </label>
+                </fieldset>
+
+<fieldset class="questions">
+                    <label id="email-label" for="email">Email
+                        <input id="email" type="email" name="email" placeholder="Please insert your email"required/>
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <label for="Birthday">Birthday
+                        <input id="birthday" type="date" name="birthday" placeholder="Please select your birthday" required>
+                    </label>
+                    <p id="birthday-description">(We need the birthday to research the difference between ages and zodiac signs.)</p>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <p id="gender">Gender</p>
+                    <label for="male" class="gender-type"><input id="male" value="male" type="radio" name="gender-type" required/>Male</label>
+                    <label for="female" class="gender-type"><input id="female" value="female" type="radio" name="gender-type" required/>Female</label>
+                    <label for="hard-to-define" class="gender-type"><input id="hard-to-define" value="hard-to-define" type="radio" name="gender-type" required/>Hard to define</label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <p id="fan-type-description">Which option best describes your extent as ONCE?</p>
+                    <label for="crazy" class="fan-type"><input id="crazy" value="crazy" type="radio" name="fan-type" required/>TWICE is my one and only love idol. Not now but forever!!</label>
+                    <label for="high" class="fan-type"><input id="high" value="high" type="radio" name="fan-type" required/>I am also a fan of others, but TWICE is my favorite.</label>
+                    <label for="medium" class="fan-type"><input id="medium" value="medium" type="radio" name="fan-type" required/>I am more fan of others, but TWICE attracts me well too.</label>
+                    <label for="light" class="fan-type"><input id="light" value="light" type="radio" name="fan-type" required/>TWICE is just one of the groups I follow.</label>
+                    <label for="othertypes" class="fan-type"><input id="othertypes" value="othertypes" type="radio" name="fan-type" required/>None of above. It's hard to explain.</label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <p id="source">How did you know about TWICE?</p>
+                    <label for="tv-show" class="source-type"><input id="tw-show" value="tw-show" type="checkbox" class="customize_checkbox"/>TV Shows</label>
+                    <label for="stages" class="source-type"><input id="stages" value="stages" type="checkbox" class="customize_checkbox"/>Music Stages</label>
+                    <label for="Friends" class="source-type"><input id="Friends" value="Friends" type="checkbox" class="customize_checkbox"/>Friends</label>
+                    <label for="news" class="source-type"><input id="news" value="news" type="checkbox" class="customize_checkbox"/>News</label>
+                    <label for="commercials" class="source-type"><input id="commercials" value="commercials" type="checkbox" class="customize_checkbox"/>Commercials</label>
+                    <label for="youtube" class="source-type"><input id="youtube" value="youtube" type="checkbox" class="customize_checkbox"/>Youtube</label>
+                    <label for="ig" class="source-type"><input id="ig" value="ig" type="checkbox" class="customize_checkbox"/>Instagram</label>
+                    <label for="fb" class="source-type"><input id="fb" value="fb" type="checkbox" class="customize_checkbox"/>Facebook</label>
+                    <label for="twitter" class="source-type"><input id="twitter" value="twitter" type="checkbox" class="customize_checkbox"/>Twitter</label>
+                    <label for="others" class="source-type"><input id="others" value="others" type="checkbox" class="customize_checkbox"/>Others</label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <p id="fanage">How long have you been ONCE?</p>
+                    <label id="number-label" for="number"><input id="number" type="number" min="0" max="7" placeholder="should be 0-7" required/> years</label>
+                    <label for="fan-age-month"><input id="fan-age-month" type="number" min="0" max="11" placeholder="should be 0-11" required/> months</label>
+                </fieldset>                
+
+                <fieldset class="questions">
+                    <label for="dropdown">Who is your first bias?
+                        <select id="dropdown" name="dropdown" required>
+                            <option value="">(select one)</option>
+                            <option value="1">Nayeon 林娜璉</option>
+                            <option value="2">Jeongyeon 俞定延</option>
+                            <option value="3">Momo 平井桃</option>
+                            <option value="4">Sana 湊崎紗夏</option>
+                            <option value="5">Jihyo 朴志效</option>
+                            <option value="6">Mina 名井南</option>
+                            <option value="7">Dahyun 金多賢</option>
+                            <option value="8">Chaeyoung 孫彩瑛</option>
+                            <option value="9">Tzuyu 周子瑜</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset class="questions">
+                    <label for="bias2">Who is your second bias?
+                        <select id="bias2" name="bias2" required>
+                            <option value="">(select one)</option>
+                            <option value="1">Nayeon 林娜璉</option>
+                            <option value="2">Jeongyeon 俞定延</option>
+                            <option value="3">Momo 平井桃</option>
+                            <option value="4">Sana 湊崎紗夏</option>
+                            <option value="5">Jihyo 朴志效</option>
+                            <option value="6">Mina 名井南</option>
+                            <option value="7">Dahyun 金多賢</option>
+                            <option value="8">Chaeyoung 孫彩瑛</option>
+                            <option value="9">Tzuyu 周子瑜</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <label for="bias3">Who is your third bias?
+                        <select id="bias3" name="bias3" required>
+                            <option value="">(select one)</option>
+                            <option value="1">Nayeon 林娜璉</option>
+                            <option value="2">Jeongyeon 俞定延</option>
+                            <option value="3">Momo 平井桃</option>
+                            <option value="4">Sana 湊崎紗夏</option>
+                            <option value="5">Jihyo 朴志效</option>
+                            <option value="6">Mina 名井南</option>
+                            <option value="7">Dahyun 金多賢</option>
+                            <option value="8">Chaeyoung 孫彩瑛</option>
+                            <option value="9">Tzuyu 周子瑜</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <label for="albums">How many albums have you bought?
+                        <input id="albums" name="albums" type="number" min="0" required/>
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <label for="songs">Which song is your favorite?
+                        <input id="songs" name="songs" type="text" required>
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <label for="h_time">How many hours per week do you spend on TWICE?
+                        <select id="h_time" name="h_time" required>
+                            <option value="">(select one)</option>
+                            <option value="1">0-5 hours</option>
+                            <option value="2">6-10 hours</option>
+                            <option value="3">11-15 hours</option>
+                            <option value="4">16-20 hours</option>
+                            <option value="5">21-25 hours</option>
+                            <option value="6">26-30 hours</option>
+                            <option value="7">much more than any above!</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <label for="message">Do you have any message for TWICE?
+                        <textarea id="message" name="message" placeholder="such as: 'Please come to Taiwan to hold concerts!'"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <label for="varify">Please insert the correct debut date (YYYY-MM-DD) of TWICE.
+                        <input id="varify" type="text" name="debut-date" pattern="2015-10-20" title="Please answer the correct debut date of TWICE!" required />
+                    </label>
+                    <p id="varify-description">(If you insert the wrong date, this form won't be submitted successfully.)</p>
+                </fieldset>
+
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+
+            </form>
+
+            <footer>
+                <p id="copyright"><a href="https://www.facebook.com/imladris20" target="_blank">Po Lien Lin</a> Copyright</p>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>
